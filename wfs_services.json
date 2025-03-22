@@ -1,0 +1,32 @@
+{
+    "name": "WFS",
+    "description": "Usługa WFS1 (Web Feature Service) – jest usługą służącą do pobierania danych w postaci wektorowej, na podstawie kryteriów zdefiniowanych przez użytkownika. Formatem służącym do przekazywania danych jest Geography Markup Language (GML).",
+    "services": [
+
+        {
+            "nazwa": "Jednostki administracyjne",
+            "url": "http://mapy.geoportal.gov.pl/wss/service/wfsAU/guest"
+        },
+
+        {
+            "nazwa": "Sieci transportowe",
+            "url": "http://mapy.geoportal.gov.pl/wss/service/wfsTN/guest"
+        },
+
+        {
+            "nazwa": "Budynki",
+            "url": "http://mapy.geoportal.gov.pl/wss/service/wfsBU/guest"
+        },
+
+        {
+            "nazwa": "Obiekty produkcyjne i przemysłowe",
+            "url": "http://mapy.geoportal.gov.pl/wss/service/wfsPF/guest"
+        },
+        {
+            "nazwa": "Usługi użyteczności publicznej i służby państwowe",
+            "url": "http://mapy.geoportal.gov.pl/wss/service/wfsUS/guest"
+        }
+        
+
+    ]
+}
