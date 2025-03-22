@@ -146,7 +146,62 @@
 4. **Coordinate Transformation**:
    - The application handles coordinate transformations between **EPSG:2180** (used in Poland) and **EPSG:4326** (used in most mapping applications).
 
+## Application Usage Instructions
 
+### 1. **Loading Parcel Data (ULDK)**
+   - To load information about a specific parcel:
+     1. Click on the desired point on the map.
+     2. After a short moment, a polygon representing the parcel will appear on the map.
+     3. The number of the last added parcel will be displayed on the right side of the interface.
+
+---
+
+### 2. **Managing Polygons**
+   - **Undo Button**: Click to remove the last added polygon from the map.
+   - **Clear All Button**: Click to remove all polygons from the map.
+
+---
+
+### 3. **Loading Objects from WFS Servers**
+   - To load objects from WFS servers:
+     1. Click the blue button to open the WFS panel.
+     2. Define a **Bounding Box** by selecting two diagonal points on the map:
+        - Right-click on the map and select **"Add Bounding Box Corner"**.
+        - Repeat to add the second point.
+     3. A rectangle representing the Bounding Box will appear on the map.
+     4. **Note**: You cannot add more than two points. To reset, delete the Bounding Box.
+   
+   **Screenshot: Selecting WFS Layers**  
+   ![Selecting WFS Layers](screenshots/managing_polygons.png)
+
+
+---
+
+### 4. **Selecting WFS Layers**
+   - After defining the Bounding Box:
+     1. Select the desired layer from one of the predefined WFS servers.
+     2. You can add your own WFS server by editing the `wfs_services.json` file and adding the appropriate URL.
+     3. Click **"Load Layers"** to load the objects.
+     4. The selected objects will be added to the map.
+   
+   **Screenshot: Selecting WFS Layers**  
+   ![Selecting WFS Layers](screenshots/adding_wfs_data.png)
+
+---
+
+### 5. **Exporting to AutoCAD**
+   - Once all desired objects are added to the map:
+     1. Click **"Load to AutoCAD"** to export them to AutoCAD (version 2025 by default).
+     2. The objects are automatically transformed to the **EPSG:2180** coordinate system.
+     3. **Note**: The transformation process may take some time, as each point must be converted.
+      **Screenshot: Exporting to AutoCAD**  
+      ![Exporting to AutoCAD](screenshots/result.png)
+---
+
+### 6. **Known Issues**
+   - Some WFS layers may not work correctly. For example:
+     - Roads may return an exception from the server.
+     - However, road areas from the same server may work correctly.
 ---
 
 ## Technologies Used

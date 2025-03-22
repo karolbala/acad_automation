@@ -8,7 +8,7 @@ def parse_capabilities_xml(url):
         soup=bs.BeautifulSoup(response.content, "xml")
         return soup
     except Exception as e:
-        print(f"Wystąpił błąd {e}")
+        print(f"Error occured {e}")
 
 
 def get_names(parsed_xml):

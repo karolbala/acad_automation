@@ -7,7 +7,7 @@ import json
 import requests
 import bs4 as bs
 import threading
-from skrypty import *
+from scripts.map_utils import *
 import sys
 from PIL import Image, ImageTk
 import concurrent.futures
@@ -21,7 +21,7 @@ else:
     base_path = os.path.abspath(".")
 
 
-image_path = os.path.join(base_path, 'ikona.jpg')
+image_path = os.path.join(base_path, 'assets/ikona.jpg')
 json_path=os.path.join(base_path, 'wfs_services.json')
 
                

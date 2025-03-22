@@ -1,0 +1,10 @@
+ttkbootstrap
+tkintermapview
+geocoder
+geopy
+requests
+beautifulsoup4
+pyproj
+shapely
+pywin32
+pillow
