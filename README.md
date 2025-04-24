@@ -1,82 +1,11 @@
 # AutoCAD Plot Loader
 
-**AutoCAD Plot Loader** is a Python-based desktop application designed to load and display geographic polygons on an interactive map. The application allows users to fetch polygon data from **Web Feature Service (WFS)** servers, visualize the polygons on a map, and export them to **AutoCAD** for further editing or use in CAD projects. The application and provides user-friendly interface for managing geographic data.
 
 ---
 
-## Key Features
-
-1. **Interactive Map**:
-   - Displays an interactive map using the `tkintermapview` library.
-   - Users can click on the map to add markers, draw bounding boxes, and load polygons.
-
-2. **WFS Integration**:
-   - Fetches geographic data (e.g., administrative units, buildings, transport networks) from **WFS servers**.
-   - Supports multiple WFS services, which can be configured in a JSON file (`wfs_services.json`).
-
-3. **Polygon Visualization**:
-   - Loads and displays polygons on the map.
-   - Supports drawing bounding boxes to define areas of interest.
-
-4. **AutoCAD Export**:
-   - Exports the displayed polygons to **AutoCAD** as lightweight polylines.
-   - Automatically converts coordinates from **EPSG:4326** (WGS84) to **EPSG:2180** (ETRS89 / Poland CS92) for compatibility with AutoCAD.
-
-5. **User-Friendly Interface**:
-   - Built using `ttkbootstrap`.
-   - Provides buttons for common actions like adding polygons, deleting polygons, and exporting to AutoCAD.
-
-6. **Geocoding**:
-   - Retrieves the user's current location based on their IP address.
-   - Converts map coordinates to human-readable addresses using the `geopy` library.
-
-7. **Coordinate Transformation**:
-   - Converts coordinates between **EPSG:2180** and **EPSG:4326** using the `pyproj` library.
+**AutoCAD Plot Loader** is a Python-based desktop application designed to load and display geographic polygons on an interactive map. The application allows users to fetch polygon data from **Web Feature Service (WFS)** servers, visualize the polygons on a map, and export them to **AutoCAD** for further editing or use in CAD projects. The application is built using modern Python libraries and provides a user-friendly interface for managing geographic data.
 
 ---
-
-## Use Cases
-
-- **Urban Planning**: Load and visualize building footprints, administrative boundaries, or transport networks for urban planning projects.
-- **CAD Integration**: Export geographic data to AutoCAD for use in technical drawings or construction plans.
-
-
----
-
-## How It Works
-
-1. **Map Interaction**:
-   - Users can click on the map to add markers or draw bounding boxes.
-   - The application retrieves the address of the clicked location using reverse geocoding.
-
-2. **WFS Data Fetching**:
-   - Users can select a WFS service and a specific layer (e.g., buildings, transport networks) from a dropdown menu.
-   - The application fetches the data from the WFS server and displays the polygons on the map.
-
-3. **Polygon Export**:
-   - Users can export the displayed polygons to AutoCAD with a single click.
-   - The application automatically converts the coordinates to the required format and sends the data to AutoCAD.
-
-4. **Coordinate Transformation**:
-   - The application handles coordinate transformations between **EPSG:2180** (used in Poland) and **EPSG:4326** (used in most mapping applications).
-
----
-
-## Technologies Used
-
-- **Python**: The core programming language used for the application.
-- **Tkinter**: The standard Python GUI library, enhanced with `ttkbootstrap` for modern styling.
-- **TkinterMapView**: A library for displaying interactive maps in Tkinter.
-- **Geopy**: For geocoding and reverse geocoding (converting coordinates to addresses).
-- **PyProj**: For coordinate transformations between different coordinate systems.
-- **Shapely**: For working with geometric objects (e.g., polygons, points).
-- **Requests**: For making HTTP requests to WFS servers.
-- **BeautifulSoup**: For parsing XML responses from WFS servers.
-- **PyWin32**: For interacting with AutoCAD via COM automation.
-- **Pillow**: For image processing (e.g., resizing the application icon).
-
----
-
 ## Installation
 
 1. Clone the repository:
@@ -84,9 +13,9 @@
    git clone https://github.com/your-username/AutoCAD-Plot-Loader.git
    cd AutoCAD-Plot-Loader# AutoCAD Plot Loader
 
-**AutoCAD Plot Loader** is a Python-based desktop application designed to load and display geographic polygons on an interactive map. The application allows users to fetch polygon data from **Web Feature Service (WFS)** servers, visualize the polygons on a map, and export them to **AutoCAD** for further editing or use in CAD projects. The application is built using modern Python libraries and provides a user-friendly interface for managing geographic data.
-
 ---
+
+
 
 ## Key Features
 
